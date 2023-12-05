@@ -2,18 +2,17 @@
 
 main()
 {
-	int i,j,k=5,l=5;
+	int i,j,k;
 	for (i=1 ;i<=5 ; i++){
+		for(k=4; k>=i; k++){
+			printf(" ");
+		}
 			for(j=1 ; j<=9 ; j++){
-				if(j==k || j==l){
-					printf("* ");
-				}else{
-					printf("  ");
+				(j==1)?printf("*"):printf(" ");
+			}
+				for(j=2; j<=i; j++){
+					(j==i)?printf("*"):printf(" ");
 				}
-		}
-		l--;
-		k++;
 		printf("\n");
-		}
 	}
- 
+}
